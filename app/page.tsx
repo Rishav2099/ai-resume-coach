@@ -138,6 +138,12 @@ export default function Home() {
                 <span>Thinking...</span>
               </div>
             )}
+            {status === "error" && (
+              <div className="flex items-center gap-2 text-muted-foreground text-sm p-4">
+               
+                <span>My appologies unable to send message</span>
+              </div>
+            )}
           </ConversationContent>
           <ConversationScrollButton />
         </Conversation>
