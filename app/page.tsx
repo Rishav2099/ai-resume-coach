@@ -58,7 +58,7 @@ export default function Home() {
       reader.onerror = (error) => reject(error);
     });
 
-  const handleSubmit = async (e?: PromptInputMessage) => {
+  const handleSubmit = async (e: PromptInputMessage) => {
     if ((!input && !file) || !sessionId || isProcessing) return;
 
     let fileBase64 = "";
